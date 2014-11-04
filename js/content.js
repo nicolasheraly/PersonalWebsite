@@ -4,10 +4,6 @@ $(document).ready(function() {
 		$('section').css('height', $(window).height());
 	});
 
-	$('.fa-chevron-down').bind('mousedown', function() {
-
-	});
-
 	$('.menu li i').bind('mousedown', function() {
 		$('.menu li i').removeClass('active');
 		$(this).addClass('active');
@@ -22,6 +18,20 @@ $(document).ready(function() {
 	    }, 400);  
 	    return false;  
 	}); 
+
+	$('.route').bind('mousedown', function() {
+		var target = $(this).attr('rel');
+		if (target === "project") {
+			$('html, body').animate({  
+	        	scrollTop:$('#projects').offset().top  
+	    	}, 400);
+		} else if ($('#'+target).hasClass('active')){
+			$('#'+target).removeClass('active');
+		} else {
+			$('#'+target).removeClass('active');
+			$('#'+target).addClass('active');	
+		}
+	});
 	
 	// lock scroll
 	var scrollPosition = [

@@ -13,7 +13,7 @@
             <a href="#api">
                 <li><i class="fa fa-bolt"></i></li> 
             </a>
-            <a href="#book">
+            <a href="#projects">
                 <li><i class="fa fa-book"></i></li>
             </a>
         </ul>
@@ -24,13 +24,13 @@
                 <h2>Développeur PHP Symfony</h2>
                 <p class="map"><i class="fa fa-map-marker"></i> Lille, France</p>
                 <div class="socials">
-                    <a href="">
+                    <a href="https://twitter.com/nHeraly" target="_blank">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/nicolasheraly" target="_blank">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a href="">
+                    <a href="" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -38,44 +38,53 @@
         </section>
         <section id="api">
             <div class="apiContainer">
-                <h2>API</h2>
-                <div class="route get">
+                <div class="route get" rel="about">
                     <span>GET</span>   /me/about <p>About me</p>
                 </div>
-                <div class="experience get">
-                    
+                <div id="about" class="content get active">
+                    <h4>About me</h4>
+                    <p>I'm Nicolas Héraly, i'm 22 & i lived in Lille, France. I'm founded of Web Developement & new technologies!</p>
+                    <p> My main friends are Github <i class="fa fa-github-alt"></i> & Symfony, so if you have any questions or some <b>NINJA</b> <i class="fa fa-rocket"></i> challenges to offer me, don't forget to contact me!</p>
                 </div>
-                <div class="route get">
-                    <span>GET</span>   /me/experience <p>My professional experiences</p>
+                <div class="route get" rel="xp">
+                    <span>GET</span>   /me/xp <p>My professional experiences</p>
                 </div>
-                <div class="experience get">
-
+                <div id="xp"class="content get">
+                    <h4>Experience</h4>
+                    <p>- Intern web developer on Symfony 2 framework @Widop from April 2013 to July 2013.</p>
+                    <p>- Alternately web developr @vcult on project Beloola, with php/Symfony/mySQL, nodeJS, webRTC technologies.</p>
                 </div>
-                <div class="route get">
+                <div class="route get" rel="skills">
+                    <span>GET</span>   /me/skills <p>My skills</p>
+                </div>
+                <div id="skills" class="content get">
+                    <h4>Skills</h4>
+                    <p>PHP Symfony javascript nodeJS android css html webRTC</p>
+                </div>
+                <div class="route get" rel="studies">
                     <span>GET</span> /me/studies <p>My path as a student</p>
                 </div>
-                <div class="studies get">
-
+                <div id="studies" class="get content">
+                    <h4>Studies</h4>
+                    <p>- D.U.T informatic at Lens, France (2010/2013). <i class="fa fa-mortar-board"></i></p>
+                    <p>- Alternately licence profesional web developer PHP at Saint-Quentin, France (2013/2014). <i class="fa fa-mortar-board"></i></p>
+                    <p>- Alternately master profesional Cloud Computing & Mobility (2014/2016). <i class="fa fa-university"></i></p>
                 </div>
-                <div class="route get">
+                <div class="route get" rel="project">
                     <span>GET</span> /me/projects <p>Projects i have realized</p>
                 </div>
-                <div class="projects get">
+                <div id="project" class="content get">
 
                 </div>
-                <div class="route put">
-                    <span>PUT</span> /suggestions <p>Any questions?</p>
-                </div>
-                <div class="suggestions put">
-
-                </div>
-                <div class="route post">
+                <div class="route post" rel="contact">
                     <span>POST</span> /contact <p>mailto("me")</p>
                 </div>
-                <div class="contact post">
+                <div id="contact" class="post">
 
                 </div>
             </div>
+        </section>
+        <section id="projects">
         </section>
         <script src="js/jquery-1.11.1.js"></script>
         <script src="js/content.js"></script>

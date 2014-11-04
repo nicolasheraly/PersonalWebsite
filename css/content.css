@@ -5,6 +5,9 @@ body {
 	background: #3d4d5f;
 	font-family: Georgia, serif;
 }
+ul li {
+	list-style-type: none;
+}
 #home {
 	color: white;
 	text-align: center;
@@ -92,10 +95,10 @@ ul.menu {
 #api {
 	width: 100%;
 	color: white;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 #api .apiContainer {
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 	color: black;
 }
@@ -109,7 +112,8 @@ ul.menu {
 	margin: 0;
 }
 #api .apiContainer .route {
-	border-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 	cursor: pointer;
 	margin-top: 25px;
 }
@@ -133,21 +137,9 @@ ul.menu {
 	font-size: 12px;
 	display: inline-block
 }
-.put span {
-	background: rgb(164,30,226);
-	color: white;
-	padding: 10px;
-	border-radius: 2px;
-	font-size: 12px;
-	display: inline-block
-}
 #api .apiContainer .post {
 	border-color: #a7e1a1;
 	background-color: #d4f7cd;
-}
-#api .apiContainer .put {
-	background-color: #f5e8e8;
-	border-color: #e8c6e7;
 }
 .apiContainer .route p {
 	display: inline-block;
@@ -159,13 +151,26 @@ ul.menu {
 .route.get p {
 	color: #0f6ab4;
 }
-.route.put p {
-	color: #a41ee2;
-}
 .route.post p {
-	color: #10a54a;
+	color: #10a54a;	
 }
 #home .map {
 	font-style: italic;	
 	font-size: 20px;
+}
+.content.get {
+	background-color: #ebf3f9;
+	border-top: 1px solid #c3d9ec;
+	padding: 10px;
+	border-bottom-right-radius: 6px;
+	margin: 0 0 20px 0;
+}
+#api .content.active {
+	display: block;
+}
+#api .content {
+	display: none;
+}
+#api h4 {
+	margin: 5px 0;
 }
