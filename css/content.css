@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #3d4d5f;
+	font-family: Georgia, serif;
 }
 #home {
 	color: white;
@@ -87,22 +88,84 @@ ul.menu {
 	margin: 10px 0 10px 0;
 	cursor: pointer;
 }
-#skills .cv {
-	width: 980px;
-	background: white;
+
+#api {
+	width: 100%;
+	color: white;
+	padding-top: 50px;
+}
+#api .apiContainer {
+	width: 60%;
+	margin: 0 auto;
 	color: black;
 }
-#skills .cv {
-	display: table-cell;
-	font-size: 1.7em;
-	padding: 1em;
-}
-#skills {
+#api h2 {
 	color: white;
-	display: table;
-	margin: auto;
-	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+	text-decoration: underline;
 }
-#skills h3 {
+#api h3 {
 	margin: 0;
+}
+#api .apiContainer .route {
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 25px;
+}
+#api .apiContainer .get {
+	border-color: #c3d9ec;
+	background-color: #e7f0f7;
+}
+.get span {
+	background: rgb(15,106,180);
+	color: white;
+	padding: 10px;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block
+}
+.post span {
+	background: rgb(16,165,74);
+	color: white;
+	padding: 10px;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block
+}
+.put span {
+	background: rgb(164,30,226);
+	color: white;
+	padding: 10px;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block
+}
+#api .apiContainer .post {
+	border-color: #a7e1a1;
+	background-color: #d4f7cd;
+}
+#api .apiContainer .put {
+	background-color: #f5e8e8;
+	border-color: #e8c6e7;
+}
+.apiContainer .route p {
+	display: inline-block;
+	float: right;
+	line-height: 34px;
+	margin: 0;
+	margin-right: 5px;
+}
+.route.get p {
+	color: #0f6ab4;
+}
+.route.put p {
+	color: #a41ee2;
+}
+.route.post p {
+	color: #10a54a;
+}
+#home .map {
+	font-style: italic;	
+	font-size: 20px;
 }
