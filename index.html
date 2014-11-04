@@ -30,7 +30,7 @@
                     <a href="https://github.com/nicolasheraly" target="_blank">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://www.linkedin.com/profile/view?id=346578333" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -57,9 +57,17 @@
                 <div class="route get" rel="skills">
                     <span>GET</span>   /me/skills <p>My skills</p>
                 </div>
-                <div id="skills" class="content get">
+                <div id="skills" class="content get active">
                     <h4>Skills</h4>
-                    <p>PHP Symfony javascript nodeJS android css html webRTC</p>
+                    {<br>
+                        &nbsp&nbsp&nbsp&nbsp"php" : ">=5.0",<br>
+                        &nbsp&nbsp&nbsp&nbsp"symfony" : [<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"1.4", ">=2.0"
+                        <br>&nbsp&nbsp&nbsp&nbsp],<br>
+                        &nbsp&nbsp&nbsp&nbsp"others": [<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"javascript", "nodeJS", "mySQL", "webRTC", "html5", "CSS3", "Git"<br>
+                        &nbsp&nbsp&nbsp&nbsp]<br>
+                    }
                 </div>
                 <div class="route get" rel="studies">
                     <span>GET</span> /me/studies <p>My path as a student</p>
