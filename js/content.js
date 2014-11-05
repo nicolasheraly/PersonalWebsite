@@ -13,7 +13,7 @@ $(document).ready(function() {
 	        scrollTop:$(the_id).offset().top  
 	    }, 400);  
 	    return false;  
-	}); 
+	});
 
 	$('.route').bind('mousedown', function() {
 		var target = $(this).attr('rel');
@@ -26,8 +26,8 @@ $(document).ready(function() {
 	});
 
 	$(window).on('scroll', function() {
+		$('#api').addClass('active');
 		$('.menu li').removeClass('active');
-		console.log($(this).scrollTop());
 		if ($(this).scrollTop() > 400) {
 			$('.menu [href="#api"] li').addClass('active');
 		} else {
