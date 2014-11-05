@@ -16,3 +16,4 @@
 - Tests IE/Safari/Firefox/Opera
 - Mobile version
 - Tablet version
+- Add down arrow + button on homepage
