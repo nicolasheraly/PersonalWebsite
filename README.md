@@ -17,3 +17,5 @@
 - Mobile version
 - Tablet version
 - Add down arrow + button on homepage
+- SEO
+- Clear code
