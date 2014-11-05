@@ -4,14 +4,11 @@ $(document).ready(function() {
 		$('section').css('height', $(window).height());
 	});
 
-	$('.menu li').bind('mousedown', function() {
-		$('.menu li').removeClass('active');
-		$(this).addClass('active');
-	});
-
 	$('.menu a[href^="#"]').click(function(){  
 	    var the_id = $(this).attr("href");  
-
+		$('#api').addClass('active');
+		$('.menu li').removeClass('active');
+		$(this).find('li').addClass('active');
 	    $('html, body').animate({  
 	        scrollTop:$(the_id).offset().top  
 	    }, 400);  

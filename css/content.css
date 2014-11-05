@@ -80,14 +80,13 @@ ul.menu {
 }
 .menu li.active i {
 	font-size: 40px;
-	border-right: 1px solid white;
+	border-right: 2px dotted rgba(255, 255, 255, 0.75);
 	padding-right: 10px;
 	color: lightgreen;
 }
 .menu li i {
 	font-size: 30px;
 	color: white;
-	/* margin: 10px; */
 	margin: 10px 0 10px 0;
 	cursor: pointer;
 }
@@ -97,6 +96,7 @@ ul.menu {
 	color: white;
 	padding-top: 20px;
 	overflow-y: scroll;
+	display: none;
 }
 #api .apiContainer {
 	width: 70%;
@@ -167,6 +167,7 @@ ul.menu {
 	border-top: 1px solid #c3d9ec;
 	padding: 10px;
 	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
 	margin: 0 0 20px 0;
 }
 #api .content.active {
@@ -175,7 +176,7 @@ ul.menu {
 #api .content {
 	display: none;
 }
-#api h4 {
+#api h4.skills {
 	margin: 5px 0;
 }
 .content p {
@@ -186,10 +187,11 @@ ul.menu {
 	width: 45%;
 	display: inline-block;
 }
-#project .project h4 {
+#project .project h4.skills {
 	text-align: center;
 	border-bottom: 2px solid #c3d9ec;
 	padding-bottom: 5px;
+	margin-top: 10px;
 }
 #project .project .projectContent {
 	font-weight: 400;
@@ -201,7 +203,7 @@ ul.menu {
 #project .project .projectSkills {
 	font-size: 14px;
 	font-weight: 600;
-	margin: 0px 5px;
+	margin: 10px 5px;
 }
 #project .project .projectSkills span {
 	margin: 5px 2px;
@@ -224,12 +226,20 @@ ul.menu {
 }
 .borderDotted {
 	border: 2px dashed #c3d9ec;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 30px 0 30px 30%;
 	width: 40%;
-	margin-left: 30%;
 }
 .project .fa-code {
 	font-size: 20px;
 	cursor: pointer;
+}
+#api.active {
+	display: block;
+}
+h4.titleProject {
+	font-size: 24px;
+	color: rgb(230,147,30);
+	margin: 0;
+	text-align: center;
+	margin-bottom: 25px;
 }
