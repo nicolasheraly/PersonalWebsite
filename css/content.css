@@ -95,7 +95,6 @@ ul.menu {
 	width: 100%;
 	color: white;
 	padding-top: 20px;
-	overflow-y: scroll;
 	display: none;
 }
 #api .apiContainer {

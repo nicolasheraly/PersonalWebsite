@@ -17,22 +17,23 @@ $(document).ready(function() {
 
 	$('.route').bind('mousedown', function() {
 		var target = $(this).attr('rel');
-		if ($('#'+target).hasClass('active')){
+		if ($('#'+target).hasClass('active')) {
 			$('#'+target).removeClass('active');
 		} else {
-			$('#'+target).removeClass('active');
-			$('#'+target).addClass('active');	
+			$('.apiContainer .content').removeClass('active');
+			$('#'+target).addClass('active');
 		}
 	});
-	
-	// lock scroll
-	var scrollPosition = [
-	self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-	self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-	];
-	var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-	html.data('scroll-position', scrollPosition);
-	html.data('previous-overflow', html.css('overflow'));
-	html.css('overflow', 'hidden');
-	window.scrollTo(scrollPosition[0], scrollPosition[1])  
+
+	$(window).on('scroll', function() {
+		$('.menu li').removeClass('active');
+		console.log($(this).scrollTop());
+		if ($(this).scrollTop() > 400) {
+			$('.menu [href="#api"] li').addClass('active');
+		} else {
+			$('.menu [href="#home"] li').addClass('active');
+			$('.apiContainer .content').removeClass('active');
+			$('.apiContainer #about').addClass('active');
+		}
+	});
 });
