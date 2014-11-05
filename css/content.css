@@ -78,7 +78,7 @@ ul.menu {
 .menu li {
 	list-style-type: none;
 }
-.menu li i.active {
+.menu li.active i {
 	font-size: 40px;
 	border-right: 1px solid white;
 	padding-right: 10px;
@@ -97,6 +97,7 @@ ul.menu {
 	color: white;
 	padding-top: 20px;
 	overflow-y: scroll;
+	display: none;
 }
 #api .apiContainer {
 	width: 70%;
@@ -232,4 +233,7 @@ ul.menu {
 .project .fa-code {
 	font-size: 20px;
 	cursor: pointer;
+}
+#api.active {
+	display: block;
 }

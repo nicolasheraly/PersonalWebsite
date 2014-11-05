@@ -4,15 +4,15 @@ $(document).ready(function() {
 		$('section').css('height', $(window).height());
 	});
 
-	$('.menu li i').bind('mousedown', function() {
-		$('.menu li i').removeClass('active');
+	$('.menu li').bind('mousedown', function() {
+		$('#api').addClass('active');
+		$('.menu li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-
 	$('.menu a[href^="#"]').click(function(){  
 	    var the_id = $(this).attr("href");  
-	  
+
 	    $('html, body').animate({  
 	        scrollTop:$(the_id).offset().top  
 	    }, 400);  
