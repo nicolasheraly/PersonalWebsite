@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #3d4d5f;
-	font-family: Georgia, serif;
+	font-family: 'Exo', Georgia, serif;
 }
 ul li {
 	list-style-type: none;
@@ -96,6 +96,7 @@ ul.menu {
 	width: 100%;
 	color: white;
 	padding-top: 20px;
+	overflow-y: scroll;
 }
 #api .apiContainer {
 	width: 70%;
@@ -120,6 +121,7 @@ ul.menu {
 #api .apiContainer .get {
 	border-color: #c3d9ec;
 	background-color: #e7f0f7;
+	font-weight: 600;
 }
 .get span {
 	background: rgb(15,106,180);
@@ -127,7 +129,7 @@ ul.menu {
 	padding: 10px;
 	border-radius: 2px;
 	font-size: 12px;
-	display: inline-block
+	display: inline-block;
 }
 .post span {
 	background: rgb(16,165,74);
@@ -135,11 +137,12 @@ ul.menu {
 	padding: 10px;
 	border-radius: 2px;
 	font-size: 12px;
-	display: inline-block
+	display: inline-block;
 }
 #api .apiContainer .post {
 	border-color: #a7e1a1;
 	background-color: #d4f7cd;
+	font-weight: 600;
 }
 .apiContainer .route p {
 	display: inline-block;
@@ -147,6 +150,7 @@ ul.menu {
 	line-height: 34px;
 	margin: 0;
 	margin-right: 5px;
+	font-weight: 200;
 }
 .route.get p {
 	color: #0f6ab4;
@@ -173,4 +177,59 @@ ul.menu {
 }
 #api h4 {
 	margin: 5px 0;
+}
+.content p {
+	font-weight: 400;
+}
+#project .project {
+	margin: 10px 2%;
+	width: 45%;
+	display: inline-block;
+}
+#project .project h4 {
+	text-align: center;
+	border-bottom: 2px solid #c3d9ec;
+	padding-bottom: 5px;
+}
+#project .project .projectContent {
+	font-weight: 400;
+	font-size: 14px;
+	text-indent: 15px;
+	text-align: justify;
+	margin: 5px 15px;
+}
+#project .project .projectSkills {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0px 5px;
+}
+#project .project .projectSkills span {
+	margin: 5px 2px;
+	cursor: pointer;
+}
+.imgProject.right, .imgProject.left {
+	display: inline-block;
+	width: 48%;
+}
+.imgProject.right {
+	text-align: right;
+	padding-right: 2%;
+}
+.imgProject.left {
+	text-align: left;
+	padding-left: 2%;
+}
+.imgProject img {
+	width: 80%;
+}
+.borderDotted {
+	border: 2px dashed #c3d9ec;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 40%;
+	margin-left: 30%;
+}
+.project .fa-code {
+	font-size: 20px;
+	cursor: pointer;
 }

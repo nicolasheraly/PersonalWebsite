@@ -21,11 +21,7 @@ $(document).ready(function() {
 
 	$('.route').bind('mousedown', function() {
 		var target = $(this).attr('rel');
-		if (target === "project") {
-			$('html, body').animate({  
-	        	scrollTop:$('#projects').offset().top  
-	    	}, 400);
-		} else if ($('#'+target).hasClass('active')){
+		if ($('#'+target).hasClass('active')){
 			$('#'+target).removeClass('active');
 		} else {
 			$('#'+target).removeClass('active');

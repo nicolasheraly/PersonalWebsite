@@ -4,6 +4,7 @@
         <title>Nicolas Héraly - Developpeur PHP Symfony</title>
         <link rel="stylesheet" href="css/content.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Exo:200,400,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <ul class="menu">
@@ -13,15 +14,12 @@
             <a href="#api">
                 <li><i class="fa fa-bolt"></i></li> 
             </a>
-            <a href="#projects">
-                <li><i class="fa fa-book"></i></li>
-            </a>
         </ul>
         <section id="home">
             <div class="infosMe">
                 <h1>Nicolas Héraly</h1>
                 <img src="img/me.jpg" width="100px" height="100px">
-                <h2>Développeur PHP Symfony</h2>
+                <h2>PHP Symfony Developer</h2>
                 <p class="map"><i class="fa fa-map-marker"></i> Lille, France</p>
                 <div class="socials">
                     <a href="https://twitter.com/nHeraly" target="_blank">
@@ -41,13 +39,13 @@
                 <div class="route get" rel="about">
                     <span>GET</span>   /me/about <p>About me</p>
                 </div>
-                <div id="about" class="content get active">
+                <div id="about" class="content get">
                     <h4>About me</h4>
                     <p>I'm Nicolas Héraly, i'm 22 & i lived in Lille, France. I'm founded of Web Developement & new technologies!</p>
                     <p> My main friends are Github <i class="fa fa-github-alt"></i> & Symfony, so if you have any questions or some <b>NINJA</b> <i class="fa fa-rocket"></i> challenges to offer me, don't forget to contact me!</p>
                 </div>
                 <div class="route get" rel="xp">
-                    <span>GET</span>   /me/xp <p>My professional experiences</p>
+                    <span>GET</span>   /me/xp <p>Professional experiences</p>
                 </div>
                 <div id="xp"class="content get">
                     <h4>Experience</h4>
@@ -57,17 +55,17 @@
                 <div class="route get" rel="skills">
                     <span>GET</span>   /me/skills <p>My skills</p>
                 </div>
-                <div id="skills" class="content get active">
+                <div id="skills" class="content get">
                     <h4>Skills</h4>
-                    {<br>
+                    <p>{<br>
                         &nbsp&nbsp&nbsp&nbsp"php" : ">=5.0",<br>
                         &nbsp&nbsp&nbsp&nbsp"symfony" : [<br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"1.4", ">=2.0"
                         <br>&nbsp&nbsp&nbsp&nbsp],<br>
                         &nbsp&nbsp&nbsp&nbsp"others": [<br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"javascript", "nodeJS", "mySQL", "webRTC", "html5", "CSS3", "Git"<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"javascript", "nodeJS", "mySQL", "webRTC", "html5", "CSS3", "Git", "Android", "Doctrine", "LAMP", "Agile", "Scrum"<br>
                         &nbsp&nbsp&nbsp&nbsp]<br>
-                    }
+                    }</p>
                 </div>
                 <div class="route get" rel="studies">
                     <span>GET</span> /me/studies <p>My path as a student</p>
@@ -76,13 +74,69 @@
                     <h4>Studies</h4>
                     <p>- D.U.T informatic at Lens, France (2010/2013). <i class="fa fa-mortar-board"></i></p>
                     <p>- Alternately licence profesional web developer PHP at Saint-Quentin, France (2013/2014). <i class="fa fa-mortar-board"></i></p>
-                    <p>- Alternately master profesional Cloud Computing & Mobility (2014/2016). <i class="fa fa-university"></i></p>
+                    <p>- Alternately master profesional Cloud Computing & Mobility (2014/2016).</p>
                 </div>
                 <div class="route get" rel="project">
-                    <span>GET</span> /me/projects <p>Projects i have realized</p>
+                    <span>GET</span> /me/projects <p>Realized projects</p>
                 </div>
-                <div id="project" class="content get">
-
+                <div id="project" class="content get active">
+                     <div class="project">
+                        <h4>Activizio</h4>
+                        <p class="projectContent">
+                            Projet développé dans le cadre du concours des jeunes talents du numériques organisé par la communauté d'agglomération de Saint-Quentin. 
+                        </p>
+                        <h4>Skills</h4>
+                        <div class="projectSkills">
+                            <span>Symfony2</span>
+                            <span>webRTC</span>
+                            <span>javascript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>nodeJS</span>
+                        </div>
+                    </div>
+                    <div class="imgProject right">
+                        <img src="img/activizio.png">
+                    </div>
+                    <div class="borderDotted"></div>
+                    <div class="imgProject left">
+                        <img src="img/apiculture.png">
+                    </div>
+                     <div class="project">
+                        <h4>Apiculture</h4>
+                        <p class="projectContent">
+                            Projet de licence pro développé avec le framework Zend Framework 2. 
+                        </p>
+                        <h4>Skills</h4>
+                        <div class="projectSkills">
+                            <span>Zend framework 2</span>
+                            <span>javascript</span>
+                            <span>html</span>
+                            <span>bootstrap3</span>
+                            <span>CSS3</span>
+                            <span>Google map API</span>
+                        </div>
+                    </div>
+                    <div class="borderDotted"></div>
+                     <div class="project">
+                        <h4>SportMeUp</h4>
+                        <p class="projectContent">
+                            I'm building with 2 friends a Symfony 2 REST API in order to store data for amateur sports. This API will be used in order to build an Android application.
+                        </p>
+                        <h4>Skills</h4>
+                        <div class="projectSkills">
+                            <span>Symfony2</span>
+                            <span>mongoDB</span>
+                            <span>Cloud Computing</span>
+                            <span>API</span>
+                            <span>REST</span>
+                            <span>oAuth2</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                    <div class="imgProject right">
+                        <img src="img/sportmeup.png">
+                    </div>
                 </div>
                 <div class="route post" rel="contact">
                     <span>POST</span> /contact <p>mailto("me")</p>
@@ -91,8 +145,6 @@
 
                 </div>
             </div>
-        </section>
-        <section id="projects">
         </section>
         <script src="js/jquery-1.11.1.js"></script>
         <script src="js/content.js"></script>
