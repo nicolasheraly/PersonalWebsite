@@ -28,6 +28,7 @@ $(document).ready(function() {
 	$(window).on('scroll', function() {
 		$('#api').addClass('active');
 		$('.menu li').removeClass('active');
+
 		if ($(this).scrollTop() > 400) {
 			$('.menu [href="#api"] li').addClass('active');
 		} else {
